@@ -5,16 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
-    <title>PEC3 Isabella - Home</title>
+    <title>PEC3 Isabella - Members</title>
   </head>
   <body class="font-serif min-w-sm">
     <div class="flex flex-col min-h-screen">
       <include src="./views/header.html"></include>
       <main class="flex-1">
-        <ul class="p-7">
-          <li><a href="news.html" class="block text-lg p-3 border hover:text-blue-500">Go to News Page</a></li>
-          <li><a href="members.html" class="block text-lg p-3 border-r border-l border-b hover:text-blue-500">Go to Members Page</a></li>
-        </ul>
+        <h1 class="text-center mt-12 mb-6 text-stroke">Band members</h1>
+        <div class="flex flex-wrap justify-around items-center gap-5 p-6">
+          <include src="./views/members-cards.html"></include>     
+        </div>
       </main>
       <include src="./views/footer.html"></include>
     </div>

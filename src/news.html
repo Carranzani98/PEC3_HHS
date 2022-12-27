@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <title>PEC3 Isabella - News</title>
+  </head>
+  <body class="font-serif min-w-sm">
+    <div class="flex flex-col min-h-screen">
+      <include src="./views/header.html"></include>
+      <main class="flex-1">
+        <article class="container px-3">
+          <div class="relative mb-5">
+            <img  class='min-h-news-img w-100 object-cover' src="./assets/images/news_portrait.png" alt="">
+            <h1 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white font-bold text-stroke">BlackBolts TOUR information</h1>
+          </div>
+          <h2>Normas dentro de los recintos</h2>
+          <p>
+             Como cada año BlackBolt celebra un gran tour en diferentes ciudades del mundo.
+             El tema es el mismo, pero con mejoras que harán al público vibrar, como se dijo en el 
+             diario La Vanguardia, <q>BLACKBOLTS cada año se superan, han creado en cada uno de los estadios donde van a tocas, una nave espacial hiperrealista.</q>
+          </p>
+          <p>Por esa razón, como cada año hay una serie de normas que el público debe respetar una vez dentro del recinto:</p>
+          <ol class="py-12 my-12 pl-8 border-y border-black counter-reset">
+            <li class="before:list-special-style">No se puede traer comida del exterior.</li>
+            <li class="before:list-special-style">No se pueden traer botellas de más de 500ml, y si se traen, debe ser sin tapón.</li>
+            <li class="before:list-special-style">No se puede fumar dentro del recinto.</li>
+            <li class="before:list-special-style">No se pueden traer lasers ni objectos que puedan entorpecer a los artistas.</li>
+          </ol>
+          <h2>Teloneros y últimas fechas</h2>
+          <p>
+              Las dos preguntas que más se repiten estos días, ¿Qúe teloneros acompañan a BlackBolts? y ¿Cuántos conciertos quedan?
+          </p>
+          <h3>Teloneros</h3>
+          <p>
+             Cada concierto de los BlackBolts se celebra como festival, por esa razón los teloneros son una parte clave
+             en cada uno de sus conciertos. Lo teloneros invitados este año para colaborar en el tour son Ed Sheeran, Taylor Swift y Green Day. 
+             Artistas internacionalmente conocidos y muy aclamados por el público estarán cantando en estos conciertos-festivales celebrados por toda Europa y America.
+             Nulla ultricies nulla sit amet porttitor accumsan. Donec elit magna, laoreet et massa malesuada, varius vehicula tortor. Aenean sodales varius metus, et pretium ante sagittis in. Pellentesque in rhoncus orci, ac auctor felis. Nunc quis eleifend odio. Duis in imperdiet sem, vel vulputate lacus.
+          </p>
+          <figure class="img-article-news w-3/4 my-4 mx-auto text-center">
+              <img src="./assets/images/festival2.jpeg" alt="Fotografía de una chica en un festival" class="img-fluid">
+              <figcaption class="pt-2 fs-6">Concierto Barcelona 2021</figcaption>
+          </figure>
+         
+          <h3>Últimas fechas del BlackBolts tour</h3>
+          <p>
+             El BlackBolts tour está llegando a su fin. En la siguiente tabla se encuentran las últimas fechas del tour y las ciudades donde se podrá disfrutar del mejor Rock&Roll.
+             Las entradas se pueden conseguir <a class="text-blue-link underline" href='#'>aquí</a>, ¡no te quedes sin tu entrada!
+          </p>
+          <include src="./views/newsTable.html"></include>
+      </article>
+      </main>
+      <include src="./views/footer.html"></include>
+    </div>
+  </body>
+</html>
